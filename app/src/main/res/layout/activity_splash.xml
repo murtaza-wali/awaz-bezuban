@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Splash"
+    android:padding="16dp"
+    android:background="@drawable/pow">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/splash_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            app:civ_border_color="@color/awaz_grey_font"
+            app:civ_border_width="10dp"
+            android:layout_marginBottom="200dp"
+            android:src="@drawable/logo"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/early_detection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+
+        android:text="Animal Lives Matter"
+        android:layout_above="@+id/splash_progress"
+        android:textSize="18sp"
+        android:textColor="@color/awaz_color"
+        android:textAlignment="center"
+        android:layout_margin="10dp">
+    </TextView>
+    <ProgressBar
+        android:id="@+id/splash_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="1.5dip"
+        android:maxHeight="1.5dip"
+        android:layout_above="@+id/splash_loading"
+        android:background="@color/white"
+
+        ></ProgressBar>
+
+    <TextView
+        android:id="@+id/splash_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Loading.."
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:textColor="@color/awaz_color"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+    </TextView>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Awaaz-e-Bezuban</string>
+
+    <string name="signup"> <u>New User? Signup Now</u></string>
+
+    <string name="Openn">Open</string>
+    <string name="Closee">Close</string>
+
+    <string-array name="report_type">
+
+
+        <item>Select Report Type</item>
+        <item>Lost</item>
+        <item>Found</item>
+        <item>Adopt</item>
+    </string-array>
+
+
+    <string-array name="pet_type">
+
+
+        <item>Select Pet Type Type</item>
+        <item>Cat</item>
+        <item>Dog</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="lost_type">
+        <item>Select Lost Type</item>
+        <item>I lost my Pet</item>
+        <item>I found a lost slary pet.</item>
+        <item>Adopt</item>
+    </string-array>
+
+    <string-array name="age">
+
+        <item>Age</item>
+        <item>0-3 Months</item>
+        <item>6-12 Months</item>
+        <item>1-2 Years</item>
+        <item>2-4 Years</item>
+        <item>Not Sure</item>
+    </string-array>
+
+
+    <string-array name="gender_array">
+
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Not Sure</item>
+        <item></item>
+    </string-array>
+    <string name="title_activity_chat">Chat</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="type_your_message">Type your message</string>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Discussion_Main">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="20dp"
+        android:id="@+id/app_bar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            app:civ_border_width="1dp"
+            android:onClick="emergency_back"
+            app:civ_border_color="@color/white"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency"
+            android:textColor="@color/awaz_color"
+            android:gravity="center"
+            android:layout_marginLeft="-3dp"
+            android:textAlignment="center"
+            android:textSize="18sp"></TextView>
+    </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/row_post_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_expandDirection = "up"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:fab_labelsPosition ="left"
+        app:fab_addButtonColorNormal="@color/awaz_color"
+        app:fab_labelStyle ="@style/LabelStyle">
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/discussion_screen_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/awaz_color_dark"
+            app:fabSize="normal"
+            app:fab_icon="@drawable/ic_baseline_post_add_24"
+            app:fab_title="Add Post"></com.getbase.floatingactionbutton.FloatingActionButton>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

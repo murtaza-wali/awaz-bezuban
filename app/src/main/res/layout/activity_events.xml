@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Events">
+
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags = "scroll|snap|exitUntilCollapsed"
+            app:title="Events"
+            android:textAlignment="center"
+            app:expandedTitleTextAppearance="@style/expandedTextStyle">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/custom_event_app_bar_background"
+                android:paddingHorizontal="20dp"
+                android:orientation="vertical"
+                >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="70dp"
+                    android:layout_gravity="end"
+                    app:civ_circle_background_color="@color/white"
+                    app:civ_border_color="@color/awaz_color"
+                    app:civ_border_width="1dp"
+                    android:src="@drawable/logo"></de.hdodenhof.circleimageview.CircleImageView>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Find Amazing Events Around you..."
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="26sp"></TextView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Awaz-e-Bezuban Upcoming Events.."
+                    android:textColor="@color/awaz_color_dark"
+                    android:textStyle="italic"
+                    android:textSize="20sp"></TextView>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/team_awaaz"></de.hdodenhof.circleimageview.CircleImageView>
+
+            </LinearLayout>
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:textAlignment="center"
+            app:titleTextColor="@color/white">
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_recycler"/>
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_expandDirection = "up"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                app:fab_labelsPosition ="left"
+                app:fab_addButtonColorNormal="@color/awaz_color"
+                app:fab_labelStyle ="@style/LabelStyle">
+
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/discussion_screen_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorNormal="@color/awaz_color_dark"
+                    app:fabSize="normal"
+                    app:fab_icon="@drawable/ic_baseline_post_add_24"
+                    app:fab_title="Add Post"></com.getbase.floatingactionbutton.FloatingActionButton>
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

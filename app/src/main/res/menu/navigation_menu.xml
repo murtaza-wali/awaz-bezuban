@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/report_nav"
+        android:title="Report"
+        android:icon="@drawable/ic_my_post_icon"
+        ></item>
+    <item
+        android:id="@+id/my_post_nav"
+        android:title="My Post"
+        android:icon="@drawable/ic_my_post_icon"
+        ></item>
+    <item
+        android:id="@+id/settings_nav"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings_icon"
+        ></item>
+
+    <item
+        android:id="@+id/my_chats_nav"
+        android:title="My Chats"
+        android:icon="@drawable/ic_pet_volunteer"
+        ></item>
+
+    <item
+        android:id="@+id/volunteer_nav"
+        android:title="Volunteer"
+        android:icon="@drawable/ic_pet_volunteer"
+        ></item>
+
+
+
+
+    <item
+        android:id="@+id/share_nav"
+        android:title="Invite friends"
+        android:icon="@drawable/ic_share_icon"
+        ></item>
+
+    <item
+        android:id="@+id/team_nav"
+        android:title="Awaz-e-Bezuban Team"
+        android:icon="@drawable/team_icon"
+        ></item>
+
+
+
+</menu>

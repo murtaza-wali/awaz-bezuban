@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        android:elevation="6dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:id="@+id/call_now_rescue_item"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/ic_my_post_icon"
+
+                        android:layout_marginTop="6dp"/>
+                <TextView
+                    android:id="@+id/rescue_name_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:justificationMode="inter_word"
+                    android:text="Awaz-e-Bezuban"
+                    android:textColor="@color/awaz_color"
+                    android:padding="6dp"
+                    android:textSize="16sp"
+                    ></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/address_visibility_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        android:layout_marginTop="4dp"/>
+                <TextView
+                    android:id="@+id/rescue_address_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:justificationMode="inter_word"
+                    android:text="Address"
+                    android:textColor="@color/chat_background_color"
+                    android:textSize="12sp"
+                    android:padding="6dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/ic_baseline_call_24"
+                       />
+                <TextView
+                    android:id="@+id/rescue_number_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="03001234567"
+                    android:textColor="@color/awaz_color_dark"
+                    android:textSize="12dp"
+                    android:padding="6dp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="end">
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="match_parent"
+                    android:background="@color/awaz_color_dark"
+                    android:src="@drawable/ic_baseline_call_24"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

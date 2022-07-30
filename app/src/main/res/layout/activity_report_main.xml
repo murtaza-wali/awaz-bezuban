@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/awaz_grey_font"
+    tools:context=".ReportMain">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/app_bar_report_main"
+        ></include>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/category_visibility"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/all_list_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:civ_circle_background_color="@color/awaz_color"
+            android:layout_margin="10dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/awaz_color"
+            android:src="@drawable/ic_all_icon_main"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/awaz_grey_font"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cat_list_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:civ_border_width="1dp"
+            android:layout_margin="10dp"
+            app:civ_border_color="#680909"
+            android:src="@drawable/ic_cat_icon_main"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/awaz_grey_font"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dog_list_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:layout_margin="10dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/awaz_color_dark"
+            android:src="@drawable/ic_dog_icon_main"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/report_recycler"/>
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_expandDirection = "up"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:fab_labelsPosition ="left"
+            app:fab_addButtonColorNormal="@color/awaz_color_dark"
+            app:fab_labelStyle ="@style/LabelStyle">
+
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/report_screen_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/awaz_color"
+                app:fabSize="normal"
+                app:fab_icon="@drawable/ic_baseline_post_add_24"
+                app:fab_title="Add Report"></com.getbase.floatingactionbutton.FloatingActionButton>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardCornerRadius="6dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/awaz_grey_font"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:id="@+id/loader_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        app:lazyloader_animDur="800"
+        app:lazyloader_dotsDist="10dp"
+        app:lazyloader_dotsRadius="16dp"
+        app:lazyloader_firstDelayDur="150"
+        app:lazyloader_firstDotColor="@color/white"
+        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+        app:lazyloader_secondDelayDur="300"
+        app:lazyloader_secondDotColor="@color/awaz_color_dark"
+        app:lazyloader_thirdDotColor="@color/awaz_color" />
+
+    <TextView
+        android:id="@+id/loader_text"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/awaz_color"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

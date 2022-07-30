@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:elevation="15dp"
+    app:cardBackgroundColor="#f4f4f4"
+    android:layout_height="wrap_content"
+    >
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     >
+
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/comment_profile_img"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:layout_marginStart="10dp"
+         android:layout_marginTop="20dp"
+         android:src="@drawable/logo"
+         app:civ_border_color="@color/awaz_color"
+         app:civ_border_width="1dp"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <TextView
+         android:id="@+id/comment_username"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="5dp"
+         android:layout_marginTop="20dp"
+         android:fontFamily="serif"
+         android:text="User name"
+         android:textColor="@color/awaz_color_dark"
+         android:textSize="10sp"
+         app:layout_constraintStart_toEndOf="@+id/comment_profile_img"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <TextView
+         android:id="@+id/user_coment"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="10dp"
+         android:layout_marginEnd="10dp"
+         android:fontFamily="serif"
+         android:paddingBottom="20dp"
+         android:text="Comment goes here..."
+         android:textColor="@color/awaz_color"
+         android:textSize="12sp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toEndOf="@+id/comment_profile_img"
+         app:layout_constraintTop_toBottomOf="@+id/comment_username" />
+
+     <ImageButton
+         android:id="@+id/delete_comment"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="8dp"
+         android:layout_marginEnd="5dp"
+         android:background="@android:color/transparent"
+         app:layout_constraintBottom_toBottomOf="@+id/time_comment"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+     <TextView
+         android:id="@+id/time_comment"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="4dp"
+         android:layout_marginEnd="4dp"
+         android:text="2020-11-11 10:15"
+         android:textSize="10sp"
+         app:layout_constraintEnd_toStartOf="@+id/delete_comment"
+         app:layout_constraintHorizontal_bias="1.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <View
+         android:id="@+id/view3"
+         style="@style/detail_discussion_divider"
+         android:layout_width="390dp"
+         android:layout_height="3dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.909"
+         app:layout_constraintStart_toStartOf="parent"
+         tools:layout_editor_absoluteY="70dp"></View>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

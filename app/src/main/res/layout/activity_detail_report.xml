@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/awaz_grey_font"
+    tools:context=".DetailReport">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="-20dp"
+            >
+            <ImageView
+                android:id="@+id/main_detail_img"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/cat_awaz"
+                android:scaleType="fitXY"
+                android:background="@color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="12dp"
+                app:cardCornerRadius="30dp"
+
+
+                app:cardBackgroundColor="@color/awaz_grey_font">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/detail_uname_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User Name"
+                            android:textColor="@color/awaz_color"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="22sp"
+                            />
+
+                            <TextView
+                                android:id="@+id/detail_date_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="22-october 2019 "
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="textEnd"
+                                android:layout_marginRight="6dp"
+                                android:textSize="10sp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/detail_losttype_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I lost my pet"
+                            android:textColor="@color/awaz_color_dark"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="12sp"
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            app:cardUseCompatPadding="true"
+                            android:elevation="12dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/white">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sex"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/awaz_grey_font"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/detail_sex_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Female"
+                                android:textColor="@color/awaz_color"
+                                android:layout_marginTop="4dp"
+                                android:textSize="16sp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                />
+                            </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                app:cardUseCompatPadding="true"
+                                android:elevation="12dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardBackgroundColor="@color/white">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Age"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="@color/awaz_grey_font"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:textSize="16sp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/detail_age_txt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0-3 Months"
+                                        android:textColor="@color/awaz_color"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="16sp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_gravity="center"
+                                        />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                app:cardUseCompatPadding="true"
+                                android:elevation="12dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardBackgroundColor="@color/white">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tpye"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="@color/awaz_grey_font"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:textSize="16sp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/detail_postType_txt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Lost"
+                                        android:textColor="@color/awaz_color"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="16sp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_gravity="center"
+                                        />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="12dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_marginRight="-10dp"
+                            android:layout_marginLeft="10sp"
+                            app:cardBackgroundColor="@color/white">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:orientation="horizontal">
+
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_baseline_location_on_24"/>
+                                <TextView
+                                    android:id="@+id/detail_location_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="House# 407 Civic view appt 13D2 Gulshan"
+                                android:textColor="@color/awaz_color_dark"
+                                android:textSize="12sp"
+
+                                android:layout_gravity="center"
+                                />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <TextView
+                            android:id="@+id/detail_des_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="What does Lorem Ipsum mean in English?
+Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a Latin text, but to today's reader, it's seen as gibberish"
+                            android:textColor="@color/awaz_color"
+                            android:textSize="15sp"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <Button
+                                android:id="@+id/chat_direct_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="Chat Now"
+                                android:textAllCaps="false"
+                                android:backgroundTint="@color/awaz_color"
+                                android:drawableLeft="@drawable/ic_detail_btn_paw_icon"
+                                android:textColor="@color/white"
+                                android:layout_alignParentBottom="true"/>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "90138908097",
+    "firebase_url": "https://awaaz-e-bezuban-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "awaaz-e-bezuban",
+    "storage_bucket": "awaaz-e-bezuban.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90138908097:android:71c70f07fc96fdad060b40",
+        "android_client_info": {
+          "package_name": "com.festdepartment.awaaz_e_bezuban"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90138908097-6lo086vk5h9d05oj4tjgn1pq8ackbrgi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHpNfLwn4vY1YkW9yXjhqETCCxQTsLRrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90138908097-6lo086vk5h9d05oj4tjgn1pq8ackbrgi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

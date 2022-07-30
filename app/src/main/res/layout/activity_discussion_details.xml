@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Discussion_Details">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:elevation="15dp"
+        app:cardCornerRadius="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/add_coment_edittxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/coment_edit_text_background"
+                android:ems="10"
+                android:hint="Write a Comment"
+                android:inputType="textPersonName"
+                android:textColor="@color/awaz_color"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/image_button_add_coment"
+                app:layout_constraintHorizontal_bias="0.586"
+                app:layout_constraintStart_toEndOf="@+id/discussion_profile_img_detail"
+                app:layout_constraintTop_toBottomOf="@+id/detail_description" />
+
+            <ImageButton
+                android:id="@+id/image_button_add_coment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/circle_bg_discussion"
+                android:gravity="center"
+                android:src="@drawable/ic_baseline_send_24"
+                app:layout_constraintBottom_toBottomOf="@+id/add_coment_edittxt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/add_coment_edittxt"
+                app:layout_constraintTop_toTopOf="@+id/add_coment_edittxt"
+                app:layout_constraintVertical_bias="0.125" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+
+                app:layout_constraintBottom_toBottomOf="@+id/add_coment_edittxt"
+                app:layout_constraintEnd_toEndOf="@+id/add_coment_edittxt"
+                app:layout_constraintStart_toStartOf="@+id/add_coment_edittxt"
+                app:layout_constraintTop_toTopOf="@+id/add_coment_edittxt" />
+
+            <TextView
+                android:id="@+id/dicussion_detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10dp"
+                android:text="a moment ago"
+                android:textColor="@color/awaz_grey_font"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/discussion_post_by"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:text="Murtaza Wali"
+                android:textColor="@color/awaz_color"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/posted_by"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/dicussion_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Title"
+                android:textColor="@color/awaz_color_dark"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/detail_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Cancer happens when cells that are not normal grow and spread very fast. Normal body cells grow and divide and know to stop growing. Over time, they also die. Unlike these normal cells, cancer cells just continue to grow and divide out of control and don't die when they're supposed to."
+                android:textColor="@color/awaz_color"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/discussion_post_by" />
+
+            <View
+                android:id="@+id/view"
+                style="@style/detail_discussion_divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dicussion_detail_title" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/add_comment_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_coment_edittxt">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/discussion_profile_img_detail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/logo"
+                app:civ_border_color="@color/awaz_color"
+                app:civ_border_width="1dp"
+                app:layout_constraintBottom_toBottomOf="@+id/add_coment_edittxt"
+                app:layout_constraintEnd_toStartOf="@+id/add_coment_edittxt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/add_coment_edittxt" />
+
+            <TextView
+                android:id="@+id/posted_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Posted by: "
+                android:textColor="@color/awaz_grey_font"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>
